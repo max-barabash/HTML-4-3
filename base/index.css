@@ -1,4 +1,9 @@
 /*Ссылка на шрифты кроме основного 'https://fonts.googleapis.com/css?family=Farsan|Hind+Siliguri|Racing+Sans+One|Six+Caps|Space+Mono:700'*/
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Permanent+Marker|Racing+Sans+One|Space+Mono:700|Farsan|Six+Caps');
+@font-face {
+    font-family: "OldEnglishText Custom";
+    src: url('OldEnglishTextMT2.woff') format('woff');
+}
 body
 {
     width: 1200px;
@@ -22,7 +27,7 @@ body
 .header__info
 {
     float: left;
-
+    text-align: center;
     box-sizing: border-box;
     width: 200px;
     padding: 25px 10px;
@@ -33,13 +38,19 @@ body
 .header__weather
 {
     float: right;
-
     width: 200px;
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 1.1em;
 }
 
 .header__weather-title
 {
     margin: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 1.17em;
+    text-align: center;
 }
 
 .header__weather-text
@@ -50,7 +61,10 @@ body
 .header__title
 {
     overflow: visible;
-
+    font-family: "OldEnglishText Custom", 'Permanent Marker', 'Alfa Slab One', sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: center;
     margin: 0;
 }
 
@@ -59,7 +73,6 @@ body
 .sub-header
 {
     padding: 5px 0;
-
     border-top: 1px solid;
     border-bottom: 2px solid;
 }
@@ -67,7 +80,7 @@ body
 .sub-header__copyright
 {
     display: inline-block;
-
+    font-size: 0.6em;
     margin: 0 30px;
 }
 
@@ -88,33 +101,63 @@ body
 {
     margin-top: 0;
     margin-bottom: 10px;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 3.2em;
+    font-weight: bold;
 }
-
+.article__title_font_racing {
+    font-family: 'racing sans one', cursive;
+    font-size: 2em;
+    font-weight: bold;
+}
+.article__title_font_farsan {
+    font-family: Farsan, sans-serif;
+    font-size: 2.3em;
+    font-weight: bold;
+    font-style: italic;
+}
 .article__help
 {
     margin-top: 10px !important;
     margin-bottom: 4px !important;
 }
-
+article.article div.article__content p {
+    text-indent: 2ch;
+    font-size: 0.8em;
+    text-align: justify;
+}
 
 .article__add-text
 {
     margin-top: 10px;
     margin-bottom: 4px;
+    text-align: justify;
+    text-indent: 2ch;
+    font-size: 0.8em;
+    font-style: oblique;
 }
 
 .article__author
 {
     display: block;
-
     margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
 }
 
 .article__continue
 {
     display: block;
+    font-size: 0.8em;
+    text-align: center;
+    font-style: oblique;
 }
-
+section.multicolumn div.article__content p {
+    font-size: 0.8em;
+    column-count: 2;
+    column-gap: 15px;
+}
 .article__image
 {
     margin: 0;
@@ -127,10 +170,17 @@ body
 
     margin: 10px 0 5px 10px;
 }
-
+.article__image-caption {
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
 .article__subtitle
 {
     margin: 10px 0;
+    font-family: "Times New Roman", sans-serif;
+    text-align: center;
+    font-size: 1.17em;
+    font-weight: bold;
 }
 
 /*––––––––––––––––––Блок главной фотографии–––––––––*/
@@ -143,15 +193,21 @@ body
 {
     width: 100%;
 }
-
+.main-photo__caption {
+    font-size: 0.7rem;
+    text-align: right;
+    font-variant: small-caps;
+}
 .main-photo__title
 {
     margin: 0;
+    font-weight: bold;
 }
 
 .main-photo__desc
 {
     margin-bottom: 20px;
+    font-size: 0.8em;
 }
 
 /*––––––––––––––––––Линия разделения––––––––––––––––*/
